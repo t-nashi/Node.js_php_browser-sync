@@ -8,8 +8,11 @@ gulp.task("server", function() {
     connect.server({
         base:'./public',                    // ベースとなるフォルダ
         port: 8000,
-        bin: 'C:/xampp/php/php.exe',        // xamppのphp.exe （xamppのApacheの起動は不要。必要があればパスを通す。）
-        ini: 'C:/xampp/php/php.ini'         // xamppのphp.ini
+        bin: 'C:/xampp/php/php.exe',        // [win]xamppのphp.exe （xamppのApacheの起動は不要。必要があればパスを通す。）
+        ini: 'C:/xampp/php/php.ini'         // [win]xamppのphp.ini
+        // bin: '/Applications/XAMPP/xamppfiles/bin/php',       // [mac]xamppのphp.exe （xamppのApacheの起動は不要。必要があればパスを通す。）
+        // ini: '/Applications/XAMPP/xamppfiles/etc/php.ini'    // [mac]xamppのphp.ini
+
     }, function (){
         browser({
             proxy: 'localhost:8000/',       // proxyを設定することによってこの指定ページを表示するようになる
