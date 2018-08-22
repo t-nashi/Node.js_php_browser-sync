@@ -1,28 +1,49 @@
 # Node.js_php_browser-sync
 gulpとbrowser-syncとgulp-connect-phpで同期可能なphp実行環境構築
+<br><br><br>
+
+
 
 ## このサンプル制作時の環境
 * Windows10 Pro、64bit、32GB
+<br><br><br>
+
+
 
 ## 事前に用意するもの
 * Node.js（本サンプル制作時はv8.4.0）
 * xampp（xampp Control Panel:v3.2.2, php:5.6.19）
+<br><br><br>
+
+
 
 ## 開発手順（win:cmd、mac:tarminal）
 1. npm install （package.jsonにあるライブラリがインストールされる）
 1. gulp （gulpfile.js内のdefaultタスクが実行される。タスク一覧は `gulp --task` で表示）
+<br><br><br>
+
+
 
 ## npm installでインストールされるライブラリ
 * gulp
 * gulp-connect-php
 * browser-sync
+<br><br><br>
+
+
 
 ## gulpで実行されること
 * publicフォルダ内のindex.phpがブラウザで表示される
+<br><br><br>
+
+
 
 ## 参考リンク
 * [GulpでBrowserSyncと動的ページ(PHPなど)の連携 - Qiita](http://qiita.com/8845musign/items/a3d4956ad138a3062675)
 * [gulpでphp環境  ～ gulp-connect-php ～ - Qiita](http://qiita.com/hsakurai2/items/948443ad0b0231d9c269)
+<br><br><br>
+
+
 
 ## 知っておくと便利なnpmコマンド一覧
 * `npm root -g` … グローバルのルート（node_modules）を調べる
